@@ -1,0 +1,16 @@
+	component nios_system is
+		port (
+			board_rxd       : in  std_logic                    := 'X'; -- rxd
+			board_jtag_mode : in  std_logic                    := 'X'; -- jtag_mode
+			board_txd       : out std_logic;                           -- txd
+			board_leds      : out std_logic_vector(3 downto 0);        -- leds
+			board_LCD_DATA  : out std_logic_vector(7 downto 0);        -- LCD_DATA
+			board_LCD_EN    : out std_logic;                           -- LCD_EN
+			board_LCD_RW    : out std_logic;                           -- LCD_RW
+			board_LCD_RS    : out std_logic;                           -- LCD_RS
+			board_LCD_ON    : out std_logic;                           -- LCD_ON
+			clock_clk       : in  std_logic                    := 'X'; -- clk
+			reset_reset_n   : in  std_logic                    := 'X'  -- reset_n
+		);
+	end component nios_system;
+

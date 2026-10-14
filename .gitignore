@@ -1,0 +1,14 @@
+**/db/
+**/incremental_db/
+**/.qsys_edit/
+**/output_files/
+**/build/
+*.qws
+*.dat
+*.pem
+*.vvp
+*.sof
+*.pof
+*.zip
+**/__pycache__/
+quartus/de2_115_nios/firmware/nios_app.*

@@ -1,0 +1,30 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\dangt\OneDrive\Documents\ChatGPT\Minh - WORK\N6\nios_system.qsys" --synthesis=VERILOG --output-directory="C:\Users\dangt\OneDrive\Documents\ChatGPT\Minh - WORK\N6\nios_system\synthesis" --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading N6/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk [altera_clock_bridge 25.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu [intel_niosv_c 4.1.0]
+Progress: Parameterizing module cpu
+Progress: Adding juart [altera_avalon_jtag_uart 25.1]
+Progress: Parameterizing module juart
+Progress: Adding mem [altera_avalon_onchip_memory2 25.1]
+Progress: Parameterizing module mem
+Progress: Adding reset [altera_reset_bridge 25.1]
+Progress: Parameterizing module reset
+Progress: Adding uart [nios_uart_peripheral 1.0]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios_system.cpu: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: nios_system.cpu: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: nios_system.cpu: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: nios_system.juart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Error: nios_system.: set_interface_property: No parameter waitrequestAllowance     while executing "set_interface_property s0 waitrequestAllowance 0"
+Warning: nios_system.uart.s0: Interface has no signals
+Error: nios_system.uart.s0: Master has no read or write interface
+Warning: nios_system.juart: Interrupt sender juart.irq is not connected to an interrupt receiver
+Info: nios_system: Generating "nios_system" for QUARTUS_SYNTH
+Error: null
